@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About Me</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="numerics.html">Numerical Projects</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="experiments.html">Experimental Projects</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="CV.pdf" download> My CV</a>
+          </div>
+
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand"><strong>Dina Soltani Tehrani</strong></div>
+        </div>
+      </div>
+    </div>
+    <h3>Contact Me Through The Following Ways:</h3>
+    <div class="contact">
+      <a href="https://github.com/dinasoltani"
+        ><img src="images/logos/github.png" height="40"
+      /></a>
+      <a href="https://www.linkedin.com/in/dina-soltani-t"
+        ><img src="images/logos/linkedin.png" height="40"
+      /></a>
+    </div>
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("image-blur");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("image-blur");
+      });
+    });
+  </script>
+</html>

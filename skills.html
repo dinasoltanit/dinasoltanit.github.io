@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skills</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About Me</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="experiences.html">Experiences</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="contributions.html">Contributions</a>
+          </div>
+
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="skills.html">Skills</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="CV.pdf"> My CV</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand"><strong>Dina Soltani Tehrani</strong></div>
+        </div>
+      </div>
+      <!--NavBar End-->
+      <div class="content-wrapper">
+        <!---->
+        <div class="about-content-wrapper">
+          <h3>Software Skills</h3>
+          <h4>Programming</h4>
+          <ul>
+            <li>C, C++ (Advanced);</li>
+            <li>Python (Advanced);</li>
+            <li>MATLAB (Advanced);</li>
+            <li>Mathematica (Upper Intermediate);</li>
+            <li>VHDL (Upper Intermediate);</li>
+            <li>Familiar with PSO and Genetic Algorythms;</li>
+          </ul>
+          <h4>Computation</h4>
+          <ul>
+            <li>Comsol Multiphysics (Advanced);</li>
+            <li>Ansys Fluent (Advanced);</li>
+            <li>CST Studio Suite (Upper Intermediate);</li>
+            <li>System Tool Kit (Upper Intermediate);</li>
+            <li>Open Foam (Intermediate);</li>
+          </ul>
+          <h4>Modeling and Meshing</h4>
+          <ul>
+            <li>Catia V5R21 (Advanced);</li>
+            <li>Ansys ICEM (Upper Intermediate);</li>
+          </ul>
+          <h4>General</h4>
+          <ul>
+            <li>Microsoft Office Collection (Advanced);</li>
+            <li>Git (Advanced);</li>
+            <li>LaTex (Advanced);</li>
+          </ul>
+
+          <h3>Certificates</h3>
+          <ul>
+            <li>Git and Github Workshop, SciSchool, Feb 2021 - Mar 2021;</li>
+
+            <li>
+              Nonlinear Controller Desing Using MATLAB Simulink Workshop,
+              Student Scientific Association, Aerospace Engineering Department,
+              Amirkabir University of Technology, May 2017 - Sep 2019;
+            </li>
+
+            <li>
+              "Plasma Astrophysics" Meeting, Astronomy Scientific Association of
+              Amirkabir University of Technology, Sep 2019;
+            </li>
+
+            <li>
+              Wind Turbines, Design and Simulation Workshop, Student Scientific
+              Association, Aerospace Engineering Department, Amirkabir
+              University of Technology, May 2017 - Sep 2018;
+            </li>
+
+            <li>
+              MATLAB Training Workshop, Student Scientific Association,
+              Mechanical Engineering Department, Amirkabir University of
+              Technology, May 2017 - Sep 2017;
+            </li>
+
+            <li>
+              Catia Software Training Workshop, Student Scientific Association,
+              School of Mechanical Engineering, Sharif University of Technology,
+              May 2017 - September 2017;
+            </li>
+
+            <li>
+              "Scientific Discoveries In Astrophysics" Meeting, Astronomy
+              Scientific Association of Amirkabir University of Technology,
+              September 2017;
+            </li>
+
+            <li>
+              Astronomy and Astrophysics Wrokshop, Astronomy Scientific
+              Association of Amirkabir University of Technology, August 2017;
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p><br /></p>
+    <p><br /></p>
+    <h3>Contact Me Through The Following Ways:</h3>
+
+    <div class="contact">
+      <a href="https://github.com/dinasoltani"
+        ><img src="images/logos/github.png" height="40"
+      /></a>
+      <a href="https://www.linkedin.com/in/dina-soltani-t"
+        ><img src="images/logos/linkedin.png" height="40"
+      /></a>
+      <a href="mailto:dsoltanit.w@gmail.com"
+        ><img src="images/logos/email.png" height="40"
+      /></a>
+      <a href="https://github.com/dinasoltani"
+        ><img src="images/logos/youtube.png" height="40"
+      /></a>
+      <a href="https://www.researchgate.net/profile/Dina-Soltani-Tehrani"
+        ><img src="images/logos/rg.jpg" height="40"
+      /></a>
+    </div>
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("image-blur");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("image-blur");
+      });
+    });
+  </script>
+</html>
